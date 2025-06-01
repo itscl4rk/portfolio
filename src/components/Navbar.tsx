@@ -50,7 +50,9 @@ const Navbar = () => {
                     {activeItems.map((item, idx) => (
                         <li
                             key={item.name}
-                            ref={(el) => (tabRefs.current[idx] = el)}
+                            ref={(el) => {
+                                tabRefs.current[idx] = el;
+                            }}
                             onMouseEnter={() => {
                                 const el = tabRefs.current[idx];
                                 if (!el) return;

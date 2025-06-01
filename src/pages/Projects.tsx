@@ -3,7 +3,6 @@ import ChangeTitle from '@/lib/ChangeTitle';
 import { blurFade } from '@/components/ui/animations';
 import { DATA } from '@/data/resume';
 import ProjectCard from '@/components/ProjectCard';
-import GameCard from '@/components/GameCard';
 
 const Projects = () => {
     ChangeTitle({ name: `${DATA.name} • Projects` });
@@ -25,7 +24,6 @@ const Projects = () => {
             >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
                     <ProjectCard />
-                    <GameCard />
                 </div>
             </motion.section>
         </main>

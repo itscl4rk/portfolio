@@ -5,9 +5,8 @@ import ChangeTitle from '@/lib/ChangeTitle';
 const Project = () => {
     const { id } = useParams();
     const project = DATA.projects.find((p) => p.id === id);
-    const game = DATA.games.find((p) => p.id === id);
 
-    const content = project || game;
+    const content = project;
 
     ChangeTitle({ name: `${DATA.name} • ${content?.title ?? 'Project'}` });
 
